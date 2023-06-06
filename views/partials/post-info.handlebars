@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+<a href="/post/{{id}}" class="card-link">
+  <div class="card mb-3">
+    <h3 class="card-header">{{title}}</h3>
+    <div class="card-body">
+      <p class="card-text small" style="font-size: 14px;">{{post_text}}</p>
+      <h6 class="card-subtitle mb-2 text-muted">Posted By {{user.username}} on {{format_date created_at}} | {{comments.length}} {{format_plural "comment" comments.length}}</h6>
+    </div>
+  </div>
+</a>
+</div>
+</div>
