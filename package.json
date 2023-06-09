@@ -4,7 +4,13 @@
   "description": "A tech blog web application that uses the MVC scheme",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+}
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +22,8 @@
     "express-handlebars": "^5.2.1",
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.5.0"
+    "sequelize": "^6.5.0",
+    "serve": "^14.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
