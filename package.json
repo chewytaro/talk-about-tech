@@ -1,8 +1,9 @@
 {
-  "name": "tech_blog_mvc",
+  "name": "talk-about-tech",
   "main": "server.js",
   "scripts": {
-    "test": "npm run"
+    "test": "npm run",
+    "seed": "node seeds/seed.js"
   },
   "author": "",
   "license": "ISC",
